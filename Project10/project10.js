@@ -25,7 +25,7 @@ contactForm.addEventListener("submit", (event) => {
 });
 
 // Set color on event mouseenter
-submitBtn.addEventListener("mouseenter", () => {
+submitBtn.addEventListener("mouseenter", (event) => {
     if (submitPressed != true) {
         submitBtn.style.backgroundColor = "DeepSkyBlue";
         submitBtn.style.color = "white";
@@ -33,9 +33,9 @@ submitBtn.addEventListener("mouseenter", () => {
 });
 
 // (Re)Set color on event mouseleave
-submitBtn.addEventListener("mouseleave", () => {
+submitBtn.addEventListener("mouseleave", (event) => {
     if (submitPressed != true) {
-            submitBtn.style.backgroundColor = "";
+            submitBtn.style.backgroundColor = "white";
             submitBtn.style.color = "black";
     }
 });
