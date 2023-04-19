@@ -1,0 +1,73 @@
+.orange-text {
+    color:rgb(255, 145, 42);
+}
+
+.grey-text {
+    color: #979aa2;
+}
+
+.light-background {
+    background-color:rgba(63, 79, 92, 0.926);
+}
+
+.xdark {
+    background-color: #0e0e10;
+}
+
+.mdark {
+    background-color: #18181bf5;
+}
+
+body {
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.btn-pink {
+    background-color: #e053e4f5;
+    color: black;
+}
+
+.btn-yellow {
+    background-color: #dbc81af5;
+    color: black;
+}
+
+.btn-lavender {
+    background-color: rgb(165, 165, 255);
+    color: black;
+}
+
+/* Rainbow */
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+
+.rainbow {
+    text-decoration: underline;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #009b03, #76d06e , #009b03);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 5s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}

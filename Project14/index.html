@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 14: Browser-Based JavaScript</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body id="body" class="pb-5 mdark" onload="dispScreenSize();">
+    <!-- Doc Header -->
+    <header id="" class="pt-4 pb-2 mb-4 xdark text-primary sticky-top">
+        <div class="container-fluid d-flex justify-content-between px-3">
+            <h2>Alexander Recinos</h2>
+            <h3 id="doc_heading"></h3>
+            <p id="display-date" class="fs-4"></p>
+        </div>
+    </header>
+    <main>
+        <!-- Print & Search bar -->
+        <div style="height: 55px;" class="container-fluid px-4">
+            <div class="d-flex justify-content-between">
+                <button id="print" class="btn btn-yellow mx-1">Print page</button>
+                <div class="col-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="find-box" placeholder="Enter search term">
+                        <button class="btn btn-pink" id="find-btn">Find</button>
+                    </div>                   
+                </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-between mt-1">
+                <p></p>
+                <p class="grey-text col-2" id="found?"></p>
+            </div> 
+        </div>
+        
+        <!-- Content Header -->
+        <section class="container-fluid px-4">
+            <div id="" class="border-top border-2 mt-4">
+                <div class="container d-flex justify-content-between align-items-center border-bottom border-2">
+                    <h1 class="rainbow rainbow_text_animated justify-content-start">The Pacific Northwest</h1>
+                    <!-- Div for item to right of content heading -->
+                    <div class="d-flex justify-content-end align-items-end">
+                        <img src="pnw.webp" id="" style="max-width: 150px;">
+                    </div>
+                </div>
+            </div><br>
+        </section>
+
+        <!-- Main Content -->
+        <section class="container">
+            <div class="border-bottom border-2">
+                <div class="d-flex justify-content-between">
+                    <h2 id="main-sub" class="col-7" style="color:rgb(165, 165, 255);">Mount Rainier</h2>
+                    <p id="main-sub-changes" class="col-3 text-white fs-6"></p>
+                </div>
+                <div id="main-content" class="grey-text fs-5 px-5">
+                    <div class="d-flex justify-content-between">
+                        <div class="col-6">
+                            <p style="text-indent: 1.5em;">Mt. Rainier National Park is a worldwide tourist destination for those 
+                                itching to see the great beauty of the Pacific Northwest. The best time of year to visit is 
+                                early to mid-summer to see the vibrant fields of alpine wildflowers. Hikes are easily accessible 
+                                to the snow level in the summer time, with paved pathways reaching far enough for some of the best views.</p>
+                            <p style="text-indent: 1.5em;">Although some days can be crowded during the season, for many the views cannot compare to anywhere else.
+                                Personally, I think this is a must see location for the PNW, despite the amount of traffic that is seen.
+                                If you aren't experienced with hiking or who simply want to experience the great outdoors without worries,
+                                Mt. Rainier National Park may be the destination for you. Your only complaint might be the pesky mosquitoes
+                                that are prevalent during the summer season, but you quickly forget them as you take in the wonder that is 
+                                <strong class="rainbow rainbow_text_animated">Mt. Rainier</strong>.</p><br>
+                        </div>
+                        <figure class="figure col-6 ms-5">
+                            <img src="mt-rainier-paradise-1.jpg" class="figure-img img-fluid rounded-3 border border-white border-2" 
+                                alt="view of mt. rainier from paradise in the summer">
+                            <figcaption class="figure-caption">A view of Mt. Rainier from Paradise during the summer season.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="d-flex justify-content-between mt-2">
+                        <p>Visit <a href="https://www.nps.gov/mora/index.htm" target="_blank" id="nps-link">
+                            Mt. Rainier National Park's</a> website for more info.</p>
+                        <p id="has-opened" class="text-success"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign up section -->
+        <section class="my-5">
+            <div id="" class="container grey-text px-5 mt-3">
+                <div class="d-flex justify-content-between">
+                    <div class="col-4">
+                        <p id="sign-up" class="rainbow rainbow_text_animated fs-3">Sign Up</p>
+                        <form id="update-form">
+                            <!-- Name -->
+                            <input class="form-control" type="text" id="name" name="name" placeholder="Name"><br>
+                            <!-- Email -->
+                            <input class="form-control" type="email" id="email" name="email" placeholder="Email"><br>
+                            <!-- Submit -->
+                            <input id="submit-btn" class="btn btn-lg btn-lavender btn-outline-dark" type="submit">
+                        </form>
+                    </div>
+                    <div class="fs-6 pt-2">
+                        <p class="fs-5">Actions performed: </p>
+                        <p id="output"></p>
+                        <p id="output-1"></p>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 100px;"></div>
+        </section>
+    </main>
+    <footer class="footer fixed-bottom pt-3 xdark text-white text-center cfont">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+                <p id="window-size"></p>
+                <p id="time"></p>
+                <p id="lang"></p>
+            </div>
+        </div>
+    </footer>                
+</body>
+<script src="project14.js"></script>
+<script>
+    // Set heading from doc title
+    let docTitle = document.title;
+    document.getElementById("doc_heading").innerHTML = docTitle;
+
+    // Set todays date to variable
+    let today = new Date();
+    //Function to set todays date into the document
+    function setToday() {
+        // Get date numbers for writing into document
+        const month = today.getMonth() + 1;
+        const day = today.getDate();
+        const year = today.getFullYear();
+        
+        // Write the set date into document
+        document.getElementById("display-date").innerHTML = `${month}/${day}/${year}`;
+    }
+    setToday();
+
+    // ------------------------------------------------------------------------------------------------------------
+    // Get the user's local time and update every second
+    function setLocalTime() {
+        // Initialize new date object
+        today = new Date();
+        // Get user's local time
+        let currentTime = today.toLocaleTimeString();
+        // Get user's time zone
+        let timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        // Write Time into document
+        document.getElementById("time").innerHTML = `${currentTime} - ${timeZone}`;
+    }
+    // Update function every second
+    setLocalTime();
+    setInterval(setLocalTime, 1000);
+</script>
+</html>

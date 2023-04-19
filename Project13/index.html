@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 13: Handling Strings</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body id="body" class="pb-5 mdark" onload="">
+    <!-- Doc Header -->
+    <header id="" class="py-3 my-3 xdark text-primary">
+        <div class="container-fluid">
+            <h2>Alexander Recinos</h2>
+            <div class="d-flex justify-content-between">
+                <h3 id="doc_heading"></h3>
+                <p id="display-date" class="mx-4 fs-4"></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Content Header -->
+        <section>
+            <div id="" class="container mt-4 d-flex justify-content-between align-items-center border-bottom border-2">
+                <h1 class="rainbow rainbow_text_animated justify-content-start">Formula 1</h1>
+                <!-- Div for item to right of content heading -->
+                <div class="d-flex justify-content-end align-items-end">
+                    <img src="formula-1.png" id="" style="max-width: 150px;">
+                </div>
+            </div><br>
+        </section>
+
+        <!-- Main Content -->
+        <section class="container">
+            <div class="f1-red border-bottom border-2">
+                <div class="d-flex justify-content-between">
+                    <h2 id="main-sub" class="col-7">Australian GP</h2>
+                    <p id="main-sub-changes" class="col-3 text-white fs-6"></p>
+                </div>
+                <div id="main-content" class="grey-text fs-5 px-5 align-content-start">
+                    <div class="d-flex justify-content-between">
+                        <p id="p1" class="col-7">lando norris leads McLaren's best weekend of the season so far. 
+                            Not being able to score points in the previous weekends in Bahrain and 
+                            Saudi Arabia, it's exciting to see two top 10 finishes by the McLaren drivers at this year's Australian Grand Prix.</p>
+                        <p id="p1-changes" class="col-3 text-white fs-6"></p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p id="p2">Despite having what seems like among the slowest cars in this year's lineup, the McLaren drivers were able to "lay-low"
+                            in a most chaotic race. Norris and Piastri started off strong with clean racing lines with only 
+                            a small touch on Alpha Tauri driver Yuki Tsunoda by Norris. The clean driving certainly paid off as seen with their final standings.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p id="p3">Speaking post-race, Norris said: “For sure, our best weekend so far. 
+                            All my comments and my feelings [after qualifying], I didn't have my 
+                            hopes too high, but actually since Lap 1 the pace compared to some of the 
+                            cars around us - like the AlphaTauri, like the Haas - was a bit closer.</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p id="p4">“I felt a little bit quicker, so I could race against them, I could actually have some fun, 
+                            attack and have a bit of racing action, so [it was] a good day. 
+                            P6, some reasonable points for us, same for Oscar to have him in the points at the same time.</p>
+                    </div>
+                    <p id="p5">“We just stayed out of trouble, which was the biggest challenge today, 
+                        which was avoiding the people locking up and causing chaos, 
+                        so I'm happy; the team's done a good job, and we deserved it.”</p>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button id="fix-errors" class="btn btn-light btn-lg m-3">Fix Errors</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign up section -->
+        <section class="mb-5">
+            <div id="" class="container grey-text px-5 mt-3">
+                <div class="d-flex justify-content-between">
+                    <p id="sign-up" class="rainbow rainbow_text_animated fs-3">SIGN UP FOR FUTURE UPDATES!</p>
+                    <p id="sign-up-changes" class="col-3 text-white fs-6"></p>
+                </div>
+                <div class="d-flex justify-content-start">
+                    <form id="update-form" class="col-3">
+                        <!-- Name -->
+                        <label for="name" class="form-label fs-5">Name:</label><br>
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Lando"><br>
+                        <!-- Email -->
+                        <label for="email" class="form-label fs-5">Email Address:</label><br>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="example@domain.com"><br>
+                        <!-- Phone number -->
+                        <label for="phone-number" class="form-label fs-5">Phone Number:</label><br>
+                        <input class="form-control" type="tel" id="phone-number" name="phone number" placeholder="123-456-7890"><br>
+                        <!-- Submit -->
+                        <input id="submit-btn" class="btn btn-lg btn-light btn-outline-dark" type="submit">
+                    </form>
+                    <p id="form-status" class="text-danger fs-4" style="margin-left:40px;"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer fixed-bottom pt-3 xdark text-white text-center cfont" >
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <p id="time"></p>
+            </div>
+        </div>
+    </footer>                
+</body>
+<script src="project13.js"></script>
+</html>
